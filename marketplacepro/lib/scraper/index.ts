@@ -55,8 +55,7 @@ export async function scrapeAmazonProduct(url: string) {
     const discountRate = $(".savingsPercentage").text().replace(/[-%]/g, "");
 
     const description = extractDescription($);
-    console.log({title, currentPrice,originalPrice, outOfStock, images})
-
+    
     // Construct data object with scraped information
     const data = {
       url,
@@ -76,6 +75,7 @@ export async function scrapeAmazonProduct(url: string) {
       highestPrice: Number(originalPrice) || Number(currentPrice),
       averagePrice: Number(currentPrice) || Number(originalPrice),
     };
+    // console.log(data);
 
     return data;
   } catch (error: any) {
