@@ -12,15 +12,15 @@ export const connectToDB = async () => {
 
   try {
     await mongoose.connect(process.env.MONGODB_URI, {
-      serverSelectionTimeoutMS: 300000, // 30 seconds
-      socketTimeoutMS: 450000, // 45 seconds
-      connectTimeoutMS: 300000, // 30 seconds
+      serverSelectionTimeoutMS: 30000, // 30 seconds
+      socketTimeoutMS: 45000, // 45 seconds
+      connectTimeoutMS: 30000, // 30 seconds
     });
 
     isConnected = true;
 
     console.log("MongoDB Connected");
   } catch (error) {
-    console.log(error);
+    console.error("Failed to connect to MongoDB:", error);
   }
 };
