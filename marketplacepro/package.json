@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "@types/mongoose": "^5.11.97",
     "axios": "^1.5.1",
     "cheerio": "^1.0.0-rc.12",
-    "mongoose": "^7.5.3",
+    "mongoose": "^8.6.1",
     "next": "latest",
     "nodemailer": "^6.9.5",
     "react": "latest",
