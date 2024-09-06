@@ -20,7 +20,7 @@ const Navbar = () => {
           />
 
           <p className="nav-logo">
-            Kabth<span className='text-primary'>MarketPlacePro</span>
+            Kabth<span className='text-primary'> Market Pro</span>
           </p>
         </Link>
 
